@@ -1,0 +1,143 @@
+/*
+Para casos muito especificos o "!important" pode ser usado pra sobrepor
+algum fator, como um elemento tendo duas colors
+color: red; !important
+color: blue;
+
+se caso não tivesse o important, o texto estaria azul, mas como a 
+tag important está sendo usado no vermelho, ele desconsidera o 
+azul
+Novamente: somente usar em momentos muito especificos
+
+*/
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+header {
+    font-size: 16px;
+    margin: 44px 0px 70px 76px
+}
+
+.link-header {
+    cursor: pointer;
+    line-height: 10px;
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 24px;
+}
+
+#btn-header {
+    width: 124px;
+    height: 51px;
+    color: #fff;
+    background-color: #6fbf44;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: 3px solid #4cb538;
+    font-size: 16px;
+}
+
+img {
+    margin-left: 80px;
+    display: inline-block;
+}
+
+section {
+    display: inline-block;
+    margin-left: 180px;
+}
+
+h1 {
+    width: 600px;
+    font-size: 70px;
+    height: 600;
+}
+
+p {
+    width: 500px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+#btn-section {
+    background-color: #fff;
+    color: #6fbf44;
+    border: none;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .link-header {
+        display: none;
+    }
+
+    .btn-section {
+        width: 91px;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        margin: 17px 15px 76px 0;
+    }
+
+    img {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+
+    .pc-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: flex;
+    }
+
+    h1 {
+        margin: 0 auto;
+        display: block;
+        font-size: 30px;
+        line-height: 30px;
+        width: 278px;
+    }
+
+    section {
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin: 166 0px;
+    }
+    
+    p {
+        width: 304px;
+        font-size: 18px;
+        line-height: 33px;
+        margin: 0 auto;
+        display: block;
+        padding: 36px 0;
+    }
+
+}
